@@ -1,0 +1,58 @@
+.info-window {
+  position: absolute;
+  bottom: 60px; /* Adjust based on marker height */
+  left: -50%;
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  max-width: 200px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left */
+}
+
+.info-window:before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+}
+
+.info-window-header {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.info-window-content {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.info-window-content strong {
+  color: #333;
+}
+
+.info-line {
+  margin-bottom: 6px;
+  width: 100%; /* Ensure full width for the info line */
+}
+
+.info-line:last-child {
+  margin-bottom: 0;
+}
+
+/* Hover effects for the info window */
+.info-window:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
