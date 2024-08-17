@@ -123,7 +123,7 @@ const Map_New = ({ route, currentLocation, travelMode, movementInfo }) => {
       {currentLocation && (
         <CustomMarker
           position={currentLocation}
-          icon="/assets/car.png"
+          icon="assets/car.png"
           info={{
             type: 'current',
             speed: movementInfo.speed,
@@ -140,7 +140,7 @@ const Map_New = ({ route, currentLocation, travelMode, movementInfo }) => {
           position={destination}
           title="Destination Location"
           icon={{
-            url: "/assets/origin.png", 
+            url: "assets/origin.png", 
             scaledSize: new google.maps.Size(50, 50),
           }}
         />
